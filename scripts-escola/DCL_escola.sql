@@ -1,0 +1,12 @@
+CREATE LOGIN Paschoall WITH PASSWORD = '2906';
+
+CREATE USER Paschoall FOR LOGIN Paschoall;
+
+--comando deny-- bloqueia acesso 
+DENY INSERT , UPDATE , DELETE
+TO Paschoall;
+
+--COMANDO REVOKE - REVERTE A PERMISSAO DO USUARIO
+
+REVOKE INSERT , UPDATE, DELETE
+TO Paschoall;
